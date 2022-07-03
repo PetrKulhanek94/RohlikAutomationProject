@@ -3,11 +3,16 @@ package utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
+import java.time.Duration;
+
 public class SeleniumDriver {
+
+    protected final ConfigurationManager configurationManager = ConfigurationManager.getInstance();
+
     public WebDriver driver;
-    public String url = "https://www.rohlik.cz/vitejte";
 
     @BeforeTest
     public void openBrowser(){
@@ -16,5 +21,11 @@ public class SeleniumDriver {
         driver.manage().window().maximize();
     }
 
+    protected Actions getActions() {
+        return new Actions(driver);
+    }
 
+    protected WebDriverWait getWait(int seconds) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds));
+    }
 }
