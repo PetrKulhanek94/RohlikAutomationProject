@@ -44,21 +44,15 @@ public class ConfigurationManager {
         dateOfBirth = prop.getProperty("dateOfBirth");
     }
 
-    public String getUserName() {
-        return userName;
-    }
+    public String getUserName() { return userName; }
 
     public String getPassword() { return password; }
 
-    public String getUrl() {return url; }
+    public String getUrl() { return url; }
 
-    public String getUrlRohlicek() {
-        return urlRohlicek;
-    }
+    public String getUrlRohlicek() { return urlRohlicek; }
 
     public String getChildName() { return childName; }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
+    public String getDateOfBirth() { return dateOfBirth; }
 }
