@@ -12,4 +12,5 @@ public interface mainPage {
     String MAIN_PAGE_AVATAR_XPATH = "//div[@class='sc-18g3ccf-6 fDcQri']";
 
     String MAIN_PAGE_MEMBERSHIP_ACTIVE_XPATH = "//div[@id='headerUser']/div[1]/div[1]";
+    String MAIN_PAGE_MY_PROFILE_XPATH = "//*[@id=\"__next\"]/div[2]/div[3]/div/div/div[2]/div/div[2]/div[4]/button";
 }

@@ -11,6 +11,8 @@ public class ConfigurationManager {
     private static String password;
     private static String url;
     private static String urlRohlicek;
+    private static String childName;
+    private static String dateOfBirth;
 
     private ConfigurationManager() {
         readConfigFile();
@@ -38,21 +40,25 @@ public class ConfigurationManager {
         password = prop.getProperty("password");
         url = prop.getProperty("url");
         urlRohlicek = prop.getProperty("urlRohlicek");
+        childName = prop.getProperty("childName");
+        dateOfBirth = prop.getProperty("dateOfBirth");
     }
 
     public String getUserName() {
         return userName;
     }
 
-    public String getPassword() {
-        return password;
-    }
+    public String getPassword() { return password; }
 
-    public String getUrl() {
-        return  url;
-    }
+    public String getUrl() {return url; }
 
     public String getUrlRohlicek() {
-        return  urlRohlicek;
+        return urlRohlicek;
+    }
+
+    public String getChildName() { return childName; }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 }
