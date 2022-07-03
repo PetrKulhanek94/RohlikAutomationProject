@@ -2,22 +2,19 @@ package Tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.SeleniumDriver;
 
-import java.time.Duration;
 import java.util.List;
 
 import static pages.mainPage.*;
 import static pages.myProfile.MY_PROFILE_ROHLICEK_STATUS;
 import static pages.rohlicekPage.*;
 
-public class BuyProduct extends SeleniumDriver {
+public class ActivateRohlicekMembership extends SeleniumDriver {
 
     @BeforeTest
     void dataClear() throws InterruptedException {
@@ -48,7 +45,7 @@ public class BuyProduct extends SeleniumDriver {
     }
 
     @Test
-    void BuyProduct(){
+    void membershipActivation (){
         driver.get(configurationManager.getUrlRohlicek());
         var wait = getWait(10);
         driver.findElement(By.xpath(ROHLICEK_GET_MEMBERSHIP_XPATH)).click();
