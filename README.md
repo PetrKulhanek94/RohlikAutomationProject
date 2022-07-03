@@ -7,3 +7,5 @@ Automated TC for membership activation of the Rohlicek Club.
 - void membershipActivation : will set membership for Rohlicek Club = true for the user account.
 
 Credentials for login and other data can be found in config file: configuration.properties, the data are being passed to the test by ConfigurationManager singleton. 
+
+After each run the results in html can be found in Reports folder. 
